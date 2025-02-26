@@ -12,7 +12,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Define headers commonly used in cache poisoning attacks, all set to "testtest.com"
 POISON_HEADERS = {
     "X-Forwarded-Host": "testtest.com",
-    "X-Forwarded-Scheme": "https",
+    "X-Forwarded-Scheme": "http",
     "X-Forwarded-For": "testtest.com",
     "X-Host": "testtest.com",
     "X-Forwarded-Server": "testtest.com",
